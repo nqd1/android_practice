@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="wheelchair">wheelchair</string>
+    <string name="welcome_to_navis_centre">Welcome to NAVIS centre</string>
+    <string name="account_circle">account_circle</string>
+    <string name="login_button">Login_Button</string>
+</resources>

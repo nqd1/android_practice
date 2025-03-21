@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1_cover"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <!--android:background="@drawable/login_bg"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/welcome_to_navis_centre"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:shadowColor="#FF000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+            android:background="@drawable/circle"
+            android:padding="25dp"
+            tools:ignore="ExtraText"
+            android:id="@+id/text_view_header">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:contentDescription="@string/account_circle"
+                android:src="@drawable/baseline_account_circle_24"
+                android:padding="7dp"
+                />
+
+            <LinearLayout
+                android:layout_width="420dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="username"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EEEEEEEE"
+                    android:textSize="20sp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="10"
+                    android:padding="15dp"
+                    android:background="@drawable/rounded_rect"
+                    android:id="@+id/username_input"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_rect"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EEEEEEEE"
+                    android:textSize="20sp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="10"
+                    android:layout_marginTop="5dp"
+                    android:padding="15dp"
+                    android:id="@+id/password_input"/>
+                
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle"
+                android:contentDescription="@string/login_button"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_login"
+                android:id="@+id/login_btn">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
